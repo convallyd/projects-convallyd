@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<BaseLayout title="Ideas" description="Thoughts, articles, and ideas about building software and more.">
+  <section class="mx-auto max-w-[1100px] px-6 py-16">
+    <span class="font-mono text-[0.75em] font-medium uppercase tracking-[0.1em] text-pink">// ideas</span>
+    <h1 class="mt-2 text-[2.2em] font-bold">Ideas</h1>
+    <p class="mt-4 max-w-2xl text-surface-500 dark:text-surface-400">
+      Thoughts on building, learning, and experimenting. Not everything is polished — that's the point.
+    </p>
+    <div class="mt-10 grid gap-px bg-surface-200 dark:bg-surface-800 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map(post => (
+        <div class="bg-white dark:bg-surface-950">
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            date={post.data.date}
+            tags={post.data.tags}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

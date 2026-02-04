@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import BlogCard from '../components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allProjects = await getCollection('projects');
+const featuredProjects = allProjects
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const recentPosts = allPosts
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+---
+<BaseLayout title="Home">
+  <!-- Hero -->
+  <section class="mx-auto max-w-[1100px] px-6 py-24">
+    <span class="font-mono text-[0.75em] font-medium uppercase tracking-[0.1em] text-accent">// andy hay</span>
+    <h1 class="mt-4 text-[2.2em] font-bold sm:text-[2.8em] lg:text-[3.4em]">
+      Projects, ideas,<br />
+      <span class="bg-gradient-to-r from-accent to-pink bg-clip-text text-transparent">and experiments.</span>
+    </h1>
+    <p class="mt-6 max-w-2xl text-lg text-surface-500 dark:text-surface-400">
+      UX Research Executive exploring AI agents, automation, and building in public. 25 years bridging engineering innovation with user understanding.
+    </p>
+    <div class="mt-8 flex gap-4">
+      <a
+        href="/projects"
+        class="bg-accent px-5 py-2.5 text-sm font-medium text-white hover:bg-accent-hover transition-colors"
+      >
+        View Projects
+      </a>
+      <a
+        href="/blog"
+        class="border border-surface-300 px-5 py-2.5 text-sm font-medium text-surface-600 hover:border-pink hover:text-pink dark:border-surface-700 dark:text-surface-400 dark:hover:border-pink dark:hover:text-pink transition-colors"
+      >
+        Read Ideas
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section class="mx-auto max-w-[1100px] px-6 pb-16">
+    <div class="flex items-baseline justify-between">
+      <h2 class="text-xl font-bold">
+        <span class="font-mono text-[0.65em] font-medium uppercase tracking-[0.1em] text-accent">// </span>Featured Projects
+      </h2>
+      <a href="/projects" class="font-mono text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+        View all &rarr;
+      </a>
+    </div>
+    <div class="mt-6 grid gap-px bg-surface-200 dark:bg-surface-800 sm:grid-cols-2 lg:grid-cols-3">
+      {featuredProjects.map(project => (
+        <div class="bg-white dark:bg-surface-950">
+          <ProjectCard
+            title={project.data.title}
+            description={project.data.description}
+            slug={project.id}
+            tags={project.data.tags}
+            featured={project.data.featured}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Recent Ideas -->
+  <section class="mx-auto max-w-[1100px] px-6 pb-24">
+    <div class="flex items-baseline justify-between">
+      <h2 class="text-xl font-bold">
+        <span class="font-mono text-[0.65em] font-medium uppercase tracking-[0.1em] text-pink">// </span>Recent Ideas
+      </h2>
+      <a href="/blog" class="font-mono text-sm font-medium text-pink hover:text-pink/80 transition-colors">
+        View all &rarr;
+      </a>
+    </div>
+    <div class="mt-6 grid gap-px bg-surface-200 dark:bg-surface-800 sm:grid-cols-2 lg:grid-cols-3">
+      {recentPosts.map(post => (
+        <div class="bg-white dark:bg-surface-950">
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            date={post.data.date}
+            tags={post.data.tags}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
