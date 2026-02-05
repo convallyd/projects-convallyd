@@ -4,12 +4,13 @@ description: "This site — a personal portfolio and idea-sharing hub built with
 tags: ["Astro", "Tailwind CSS", "TypeScript"]
 featured: true
 url: "https://projects.convallyd.com"
+image: "/images/hero-portfolio.png"
 order: 1
 ---
 
 ## About This Project
 
-A clean, fast portfolio site built with modern web technologies. Ships zero JavaScript by default thanks to Astro's island architecture, with Tailwind CSS v4 for styling.
+This site. Ships zero JavaScript by default — Astro's island architecture means pages are static HTML unless a component specifically needs interactivity. Tailwind CSS v4 handles styling.
 
 ### Features
 

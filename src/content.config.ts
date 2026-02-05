@@ -11,6 +11,7 @@ const projects = defineCollection({
     url: z.string().url().optional(),
     repo: z.string().url().optional(),
     order: z.number().default(0),
+    image: z.string().optional(),
   }),
 });
 
@@ -22,6 +23,7 @@ const blog = defineCollection({
     date: z.coerce.date(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    image: z.string().optional(),
   }),
 });
 

@@ -23,7 +23,7 @@ const recentPosts = allPosts
       <span class="bg-gradient-to-r from-accent to-pink bg-clip-text text-transparent">and experiments.</span>
     </h1>
     <p class="mt-6 max-w-2xl text-lg text-surface-500 dark:text-surface-400">
-      UX Research Executive exploring AI agents, automation, and building in public. 25 years bridging engineering innovation with user understanding.
+      Co-founded URI, scaled it to 100+ people serving the world's biggest tech companies. Now building AI tools and sharing the process.
     </p>
     <div class="mt-8 flex gap-4">
       <a
@@ -60,6 +60,7 @@ const recentPosts = allPosts
             slug={project.id}
             tags={project.data.tags}
             featured={project.data.featured}
+            image={project.data.image}
           />
         </div>
       ))}
@@ -85,6 +86,7 @@ const recentPosts = allPosts
             slug={post.id}
             date={post.data.date}
             tags={post.data.tags}
+            image={post.data.image}
           />
         </div>
       ))}

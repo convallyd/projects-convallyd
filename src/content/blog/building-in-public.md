@@ -1,24 +1,27 @@
 ---
 title: "Why I'm Building in Public"
-description: "After 25 years in UX research for enterprise tech, I'm shifting to building and sharing openly — here's why."
+description: "Most of my career happened behind NDAs. Now I'm building AI tools in the open — and learning different things because of it."
 date: 2026-02-01
 tags: ["building in public", "career"]
+image: "/images/n8n-chart-0.png"
 ---
 
-After 25 years leading UX research for companies like Microsoft, Google, and Meta, I'm doing something different: building in public.
+> None of these bets were certain. However, the only certainty from sitting still is that you will be over-taken at some point.
 
-## The Shift
+Most of my career happened behind NDAs. Research for Azure before it launched. Google Cloud Platform benchmarks. AR/VR methodologies for Meta's Quest. The work mattered, but it disappeared into corporate walls the moment it was delivered.
 
-My career has been about understanding how people use technology — running research programs for Azure before it launched, benchmarking Google Cloud Platform products, pioneering AR/VR methodologies for Meta's Quest. That work happened behind NDAs and corporate walls.
+That's fine when you're an agency. Less fine when you're trying to figure out what comes next.
 
-Now I'm taking what I've learned about how people adopt complex technology and applying it to my own experiments with AI agents, automation, and open-source tools.
+## Why Open
 
-## What "Building in Public" Means for Me
+I left URI in January 2025 and started building — AI agents, automation workflows, open-source tools. The difference from agency work hit me immediately: when you share the process, you learn different things. People push back on your assumptions. They point you to tools you hadn't considered. The feedback loop is faster and more honest than any stakeholder review.
 
-- **Sharing the process**, not just polished results — including when things break
-- **Documenting decisions** so others can learn from the thinking, not just the outcome
-- **Exploring openly** at the intersection of UX research thinking and AI agent development
+So that's the approach now. Share what I'm building, how I'm building it, and what breaks along the way.
 
-## The Connection
+## What This Actually Looks Like
 
-UX research is fundamentally about understanding how people interact with complex systems. AI agents are the next complex system. The same skills that helped me build research frameworks for billion-dollar platforms are now helping me think about how humans and AI agents should work together.
+I'm documenting the decisions, not just the outcomes. Which tools I picked and why. Where I hit dead ends. What surprised me. The messy middle of trying to build useful things with AI — not the polished case study after the fact.
+
+## The Overlap I Keep Coming Back To
+
+I spent 17 years studying how people adopt complex enterprise platforms. AI agents are the next version of that problem — except now the "user" and the "system" are negotiating in real time. The research instincts are the same. The medium is completely different.

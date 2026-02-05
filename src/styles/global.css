@@ -43,4 +43,8 @@
     font-size: 0.9em;
     @apply bg-surface-100 dark:bg-surface-800 px-1.5 py-0.5;
   }
+
+  .prose img {
+    @apply border border-surface-200 dark:border-surface-800;
+  }
 }

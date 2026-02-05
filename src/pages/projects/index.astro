@@ -22,6 +22,7 @@ const projects = allProjects.sort((a, b) => a.data.order - b.data.order);
             slug={project.id}
             tags={project.data.tags}
             featured={project.data.featured}
+            image={project.data.image}
           />
         </div>
       ))}
