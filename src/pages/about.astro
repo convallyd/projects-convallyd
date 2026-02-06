@@ -3,11 +3,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="About" description="Andy Hay — UX Research Executive bridging engineering innovation with user understanding.">
   <section class="mx-auto max-w-[800px] px-6 py-16">
-    <span class="font-mono text-[0.75em] font-medium uppercase tracking-[0.1em] text-accent">// about</span>
-    <h1 class="mt-2 text-[2.2em] font-bold">Andy Hay</h1>
-    <p class="mt-2 text-lg text-surface-500 dark:text-surface-400">
-      UX Research Executive &middot; Mercer Island, WA
-    </p>
+    <div class="flex flex-col sm:flex-row sm:items-start gap-6">
+      <img
+        src="/images/andy-headshot.jpg"
+        alt="Andy Hay"
+        class="w-32 h-32 rounded-full object-cover border-2 border-accent shrink-0"
+      />
+      <div>
+        <span class="font-mono text-[0.75em] font-medium uppercase tracking-[0.1em] text-accent">// about</span>
+        <h1 class="mt-2 text-[2.2em] font-bold">Andy Hay</h1>
+        <p class="mt-2 text-lg text-surface-500 dark:text-surface-400">
+          UX Research Executive &middot; Mercer Island, WA
+        </p>
+      </div>
+    </div>
 
     <div class="mt-10 space-y-6 text-surface-500 dark:text-surface-400">
       <p>
