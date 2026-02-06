@@ -18,8 +18,8 @@ const recentPosts = allPosts
   <!-- Hero -->
   <section class="mx-auto max-w-[1100px] px-6 pt-12 pb-24">
     <h1 class="text-[2.2em] font-bold sm:text-[2.8em] lg:text-[3.4em]">
-      Projects, ideas,<br />
-      <span class="bg-gradient-to-r from-accent to-pink bg-clip-text text-transparent">and experiments.</span>
+      Andy Hay builds...<br />
+      <span id="typing-text" class="bg-gradient-to-r from-accent to-pink bg-clip-text text-transparent"></span><span id="cursor" class="text-accent">|</span>
     </h1>
     <p class="mt-6 max-w-2xl text-lg text-surface-500 dark:text-surface-400">
       Co-founded URI, scaled it to 100+ people serving the world's biggest tech companies. Now building AI tools and sharing the process.
@@ -92,3 +92,52 @@ const recentPosts = allPosts
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  const phrases = [
+    'research teams.',
+    'research strategies.',
+    'solutions.',
+    'AI agents.',
+    'products.',
+    'lab infrastructure.',
+  ];
+
+  const typingEl = document.getElementById('typing-text');
+  const cursorEl = document.getElementById('cursor');
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+    const currentPhrase = phrases[phraseIndex];
+
+    if (isDeleting) {
+      typingEl.textContent = currentPhrase.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      typingEl.textContent = currentPhrase.substring(0, charIndex + 1);
+      charIndex++;
+    }
+
+    let delay = isDeleting ? 50 : 100;
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+      delay = 2000;
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      delay = 500;
+    }
+
+    setTimeout(type, delay);
+  }
+
+  // Blinking cursor
+  setInterval(() => {
+    cursorEl.style.opacity = cursorEl.style.opacity === '0' ? '1' : '0';
+  }, 530);
+
+  type();
+</script>

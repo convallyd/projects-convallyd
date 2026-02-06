@@ -11,12 +11,7 @@ const navLinks = [
 const currentPath = Astro.url.pathname;
 ---
 <nav class="sticky top-0 z-50 border-b border-surface-200 bg-white/80 backdrop-blur-lg dark:border-surface-800 dark:bg-surface-950/80">
-  <div class="mx-auto flex max-w-[1100px] items-center justify-between px-6 py-4">
-    <a href="/" class="group">
-      <span class="font-mono text-sm font-bold tracking-tight text-accent">haybuilds</span>
-      <span class="block text-xs text-surface-500 dark:text-surface-400">Andrew Hay (Founder, Researcher, Tinkerer)</span>
-    </a>
-
+  <div class="mx-auto flex max-w-[1100px] items-center justify-end px-6 py-4">
     <div class="flex items-center gap-0.5">
       {navLinks.map(link => (
         <a
