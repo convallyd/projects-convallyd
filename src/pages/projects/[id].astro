@@ -44,11 +44,11 @@ const { Content } = await render(project);
       {project.data.url && (
         <a
           href={project.data.url}
-          target="_blank"
-          rel="noopener"
+          target={project.data.url.startsWith('/') ? '_self' : '_blank'}
+          rel={project.data.url.startsWith('/') ? undefined : 'noopener'}
           class="font-mono text-sm font-medium text-accent hover:text-accent-hover transition-colors"
         >
-          Live Site &rarr;
+          {project.data.url.startsWith('/') ? 'View Report' : 'Live Site'} &rarr;
         </a>
       )}
       {project.data.repo && (
