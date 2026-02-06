@@ -52,7 +52,7 @@
             font-family: var(--font-sans);
             line-height: 1.7;
             margin: 0;
-            padding: 0;
+            padding: 56px 0 0 0;
             color: #27272a;
             background: #fafafa;
             font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
@@ -994,6 +994,65 @@
     <!-- End Cloudflare Web Analytics -->
 </head>
 <body>
+
+<!-- Global Navigation -->
+<nav id="global-nav" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    border-bottom: 1px solid #27272a;
+    background: rgba(9, 9, 11, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+">
+    <div style="
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    ">
+        <a href="/" style="
+            padding: 6px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 500;
+            color: #71717a;
+            text-decoration: none;
+            transition: color 0.2s;
+        " onmouseover="this.style.color='#fafafa'" onmouseout="this.style.color='#71717a'">Home</a>
+        <a href="/projects" style="
+            padding: 6px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 500;
+            color: #71717a;
+            text-decoration: none;
+            transition: color 0.2s;
+        " onmouseover="this.style.color='#fafafa'" onmouseout="this.style.color='#71717a'">Projects</a>
+        <a href="/blog" style="
+            padding: 6px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 500;
+            color: #71717a;
+            text-decoration: none;
+            transition: color 0.2s;
+        " onmouseover="this.style.color='#fafafa'" onmouseout="this.style.color='#71717a'">Ideas</a>
+        <a href="/about" style="
+            padding: 6px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            font-weight: 500;
+            color: #71717a;
+            text-decoration: none;
+            transition: color 0.2s;
+        " onmouseover="this.style.color='#fafafa'" onmouseout="this.style.color='#71717a'">About</a>
+    </div>
+</nav>
 
 <!-- Tech Spec: Password Gate -->
 <div id="password-gate" style="
