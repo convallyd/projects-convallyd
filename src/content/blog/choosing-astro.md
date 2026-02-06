@@ -18,6 +18,18 @@ Last year I built a 'Jarvis Assistant' with n8n and ElevenLabs. It was fun. It m
 
 Ten days ago I built a Clawdbot, which became a Moltbot, and is now an Openclaw bot. The difference in utility was immediate. Within hours we had built a project together. It just jumps in and does work.
 
+## Building on OCI
+
+Most early adopters built their bots on Apple Mac Minis. I considered that, but after 15+ years working with cloud infrastructure — AWS, Azure, GCP — I wanted to try Oracle Cloud. Their free tier was compelling for something I might not need long-term, and everything I build is connected to the cloud anyway. I can manage access in a controlled, familiar, and secure way.
+
+More importantly: this bot was not going to be a parasite on my system. It was going to be a separate entity. If something went wrong, I could lock it out without losing any data or continuity.
+
+OCI setup was straightforward. The Openclaw setup was less so — I had to do it via CLI over SSH, on my phone, because I was going to be at my daughter's volleyball tournament most of the day. I knew my current tooling wasn't up to the task, so I downloaded Termius.
+
+Termius was impressive. I could copy errors or logs from the Openclaw CLI, paste them into ChatGPT, and paste commands back into the CLI over SSH — all protected by my private key, all working seamlessly from my phone.
+
+Once the Anthropic auth was configured as the primary model and Openclaw came online with Opus 4.5, I got that eureka hit that anyone who builds something feels when things finally work.
+
 ## What Impresses Me
 
 Two things stand out:
