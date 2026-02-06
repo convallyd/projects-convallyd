@@ -2,7 +2,7 @@
 title: "n8n Demand-Supply Gap Analysis"
 description: "An AI-assisted UX research framework analyzing 14,691 forum posts against 7,209 templates to find where n8n is failing its users — and where it's getting it right."
 tags: ["n8n", "UX Research", "AI/ML", "HDBSCAN"]
-featured: false
+featured: true
 url: "/n8n-analysis/"
 image: "/images/n8n-chart-1.png"
 order: 3

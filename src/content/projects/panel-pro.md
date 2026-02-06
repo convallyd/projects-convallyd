@@ -2,7 +2,7 @@
 title: "Panel Pro"
 description: "A self-service research platform connecting researchers with pre-screened, identity-verified tech professionals — built from scratch to solve URI's own recruiting pain."
 tags: ["SaaS", "UX Research", "Product"]
-featured: true
+featured: false
 url: "https://www.uriux.com/panel-pro/"
 image: "/images/panel-pro-2.png"
 order: 4
