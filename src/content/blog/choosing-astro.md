@@ -3,7 +3,7 @@ title: "From Jarvis to Openclaw: My AI Agent Journey"
 description: "How building AI agents evolved from a fun side project to a daily productivity tool — and what changed along the way."
 date: 2026-02-04
 tags: ["AI agents", "n8n", "automation"]
-image: "/images/hero-building.png"
+image: "/images/running out of tokens.png"
 ---
 
 > "The best way to predict the future is to invent it."
