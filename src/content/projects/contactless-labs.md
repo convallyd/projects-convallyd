@@ -10,7 +10,7 @@ order: 5
 
 ## The Problem
 
-> "The safest way to conduct research right now is to do it remotely."
+> The safest way to conduct research right now is to do it remotely."
 >
 > — [Nielsen Norman Group](https://www.nngroup.com/articles/covid-changed-users/), 2020
 

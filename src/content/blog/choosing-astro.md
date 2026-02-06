@@ -6,7 +6,7 @@ tags: ["AI agents", "n8n", "automation"]
 image: "/images/running out of tokens.png"
 ---
 
-> The best way to predict the future is to invent it.
+> The best way to predict the future is to invent it."
 >
 > — Alan Kay
 

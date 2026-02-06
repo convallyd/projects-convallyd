@@ -16,7 +16,7 @@ That's the question this analysis answers. n8n is a workflow automation platform
 
 I built a framework to find out.
 
-> "Some people say, 'Give the customers what they want.' But that's not my approach. Our job is to figure out what they're going to want before they do."
+> Some people say, 'Give the customers what they want.' But that's not my approach. Our job is to figure out what they're going to want before they do."
 >
 > — Steve Jobs
 

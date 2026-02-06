@@ -7,7 +7,7 @@ image: "/images/hero-ai-agents.png"
 order: 2
 ---
 
-> "The best way to predict the future is to invent it."
+> The best way to predict the future is to invent it."
 >
 > — Alan Kay
 

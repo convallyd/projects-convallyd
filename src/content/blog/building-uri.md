@@ -36,7 +36,7 @@ One philosophy drove everything: if we had a problem, we built the solution — 
 
 When the pandemic hit, this philosophy faced its biggest test. We were a user testing company that needed to meet humans — especially for hardware testing. We had ten research labs suddenly out of commission. Companies approached us about testing in New Zealand because they had zero COVID cases.
 
-> "The safest way to conduct research right now is to do it remotely."
+> The safest way to conduct research right now is to do it remotely."
 >
 > — [Nielsen Norman Group](https://www.nngroup.com/articles/covid-changed-users/), 2020
 
