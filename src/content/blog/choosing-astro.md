@@ -12,7 +12,7 @@ image: "/images/running out of tokens.png"
 
 Last year I built a 'Jarvis Assistant' with n8n and ElevenLabs. It was fun. It managed my European vacation itinerary. But everything it did, I had to build and maintain — so it didn't get used much.
 
-![Jarvis 1.0 — my original n8n agent implementation with child agents for email, calendar, contacts, and travel](/images/Jarvis 1.0.png)
+![Jarvis 1.0 — my original n8n agent implementation with child agents for email, calendar, contacts, and travel](/images/jarvis-1.0.png)
 
 ## The Turning Point
 
