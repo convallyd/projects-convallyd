@@ -91,7 +91,6 @@ The full report includes interactive scatter plots, alignment matrices, a quarte
 - **UMAP** for dimensionality reduction — projects high-dimensional text embeddings into 2D for visualization
 - **BERTopic** for automated topic labeling
 - **LLM-assisted analysis** for human-readable cluster summaries and strategic implications
-- **Cloudflare Workers** for hosting the interactive report at the edge
 
 ## What I Learned
 
