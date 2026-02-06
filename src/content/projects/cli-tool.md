@@ -3,7 +3,7 @@ title: "n8n Demand-Supply Gap Analysis"
 description: "An AI-assisted UX research framework analyzing 14,691 forum posts against 7,209 templates to find where n8n is failing its users — and where it's getting it right."
 tags: ["n8n", "UX Research", "AI/ML", "HDBSCAN"]
 featured: false
-url: "https://n8n-analysis.convallyd.workers.dev/"
+url: "/n8n-analysis/"
 image: "/images/n8n-chart-1.png"
 order: 3
 ---
@@ -98,4 +98,4 @@ The biggest surprise was the category mismatch. I expected to find gaps — area
 
 That's the kind of insight you get from structural analysis at scale. And it's the kind of insight that changes resource allocation decisions — not because it confirms what product teams suspected, but because it reframes the problem entirely.
 
-[Read the full report &rarr;](https://n8n-analysis.convallyd.workers.dev/)
+[Read the full report &rarr;](/n8n-analysis/)
